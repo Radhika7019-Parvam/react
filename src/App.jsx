@@ -1,4 +1,3 @@
-
 import Taskform from "./Components/Taskform";
 import TaskList from "./Components/TaskList";
 import Progresstracker from "./Components/Progresstracker";
@@ -9,12 +8,13 @@ export default function App() {
 
   useEffect(() => {
     localStorage.setItem
-    ('tasks', JSON.stringify(tasks))
+    ("tasks", JSON.stringify(tasks))
   });
 
   const addTask = (task) => {
     setTasks([...tasks,task]);
   }
+
   return(
     <div>
       <h1>Task Focus</h1>
